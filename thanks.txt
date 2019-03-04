@@ -1,0 +1,8 @@
+https://www.456bereastreet.com/archive/201012/conditional_and_custom_nextprevious_post_links_in_wordpress/
+https://www.5balloons.info/custom-html-for-comments-section-in-wordpress-theme/
+https://code.tutsplus.com/articles/customizing-and-styling-the-password-protected-form--wp-22375
+https://code.tutsplus.com/articles/customizing-comments-in-wordpress-functionality-and-appearance--wp-26128
+https://css-tricks.com/numbering-in-style/
+https://www.damiencarbery.com/2018/02/wrap-oembed-html-in-custom-div/
+https://puxl.io/
+https://stackoverflow.com/questions/37037408/possible-to-add-youtube-title-into-wordpress-embed-embed/38885843#38885843
