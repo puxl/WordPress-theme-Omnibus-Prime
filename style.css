@@ -1,333 +1,466 @@
 @charset "UTF-8";
 /*
-Theme Name: WordPress PUXL: Blog classic
-Theme URI: [ http://wordpress.org/themes/twentythirteen ]
+Theme Name: Omnibus Prime
+Theme URI: https://www.kanuel.com/pruebas/wordpress/
 Author: Iñigo Garcia (@MrKanuel)
 Author URI: https://kanuel.com/
-Description: A classic blog theme made using PUXL framework tailor-fitted. Have your contents and stories accessible, WCAG 2.1 AA compliant with zero effort: responsive, color-contrasted, usable, customizable and eco-friendly.
-Version: 1.0-RC
+Description: A classic blog starter theme made using PUXL framework tailor-fitted for WordPress. Have your stories accessible, WCAG 2.1 AA compliant with zero effort: color-contrasted, responsive, customizable, human and eco-friendly.
+Version: 1.0-beta
 License: The MIT license
-License URI: [ http://www.gnu.org/licenses/gpl-2.0.html ]
-Tags: blog, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, microformats, [ post-formats ], rtl-language-support, sticky-post, translation-ready, responsive, HTML5, CSS3, semantic, accessible, WCAG 2.1 A, WCAG 2.1 AA
-Text Domain: wp-puxl-blog-classic
+License URI: https://github.com/puxl/WordPress-theme-Omnibus-Prime/blob/master/LICENSE
+Tags: HTML5, CSS3, semantic, rtl-language-support, accessible, WCAG 2.1 AA, WCAG contrast, responsive, microformats, microformats2, blog, two-columns, right-sidebar, custom-menu, featured-images, align-wide, custom-logo, post-formats, post-thumbnails, sticky-post, translation-ready
+Text Domain: omnibus-prime
 
 This theme is free and open-source.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-/* line 18, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 21, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 body > .grid {
   margin-top: 2em; }
+  @media (min-width: 768px) {
+    /* line 21, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    body > .grid {
+      margin-top: 4em; } }
 
-/* line 24, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 30, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+.page main {
+  margin-bottom: 4em; }
+  @media (min-width: 768px) {
+    /* line 30, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    .page main {
+      margin-bottom: 6em; } }
+
+/* line 39, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+.page,
 .post {
   margin-bottom: 4em;
   padding: .5em; }
-  /* line 28, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 44, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .page:last-child,
   .post:last-child {
     margin-bottom: 0; }
   @media (min-width: 768px) {
-    /* line 24, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+    /* line 39, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    .page,
     .post {
       margin-bottom: 6em;
       padding: 1em; } }
   @media (min-width: 992px) {
-    /* line 24, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+    /* line 39, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    .page,
     .post {
       margin-bottom: 8em;
       padding: 1.5em; } }
-  /* line 42, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-  .post.sticky {
-    background-color: #F6F6F6; }
-  /* line 47, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 59, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .page > header h2,
   .post > header h2 {
     line-height: 1em;
     margin-bottom: .25em;
     word-wrap: break-word; }
-    /* line 52, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+    /* line 64, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    .page > header h2 a,
     .post > header h2 a {
       color: var(--color--body-color);
       text-decoration: none;
       word-wrap: break-word; }
-      /* line 57, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-      .post > header h2 a:focus, .post > header h2 a:hover {
+      /* line 69, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+      .page > header h2 a:focus, .page > header h2 a:hover,
+      .post > header h2 a:focus,
+      .post > header h2 a:hover {
         background-color: transparent;
         color: #000; }
-  /* line 66, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-  .post .meta {
-    align-content: flex-start;
-    display: flex;
-    justify-content: space-between;
+  /* line 77, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .page > header .meta,
+  .post > header .meta {
     margin: 1em 0 2em; }
-    /* line 75, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-    .post .meta .flag svg {
+    /* line 83, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    .page > header .meta .flag svg,
+    .post > header .meta .flag svg {
       fill: var(--color--primary); }
-  /* line 82, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-  [dir=ltr] .post .go-to {
+    /* line 89, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    [dir=ltr] .page > header .meta .reactions--count, [dir=ltr]
+    .post > header .meta .reactions--count {
+      margin-left: 2.5em; }
+    /* line 94, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    [dir=rtl] .page > header .meta .reactions--count, [dir=rtl]
+    .post > header .meta .reactions--count {
+      margin-right: 2.5em; }
+  /* line 102, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  [dir=ltr] .page .go-to, [dir=ltr]
+  .post .go-to {
     text-align: right; }
-  /* line 86, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-  [dir=rtl] .post .go-to {
+  /* line 106, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  [dir=rtl] .page .go-to, [dir=rtl]
+  .post .go-to {
     text-align: left; }
-  /* line 91, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 111, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .page .e-content + .alert.info,
   .post .e-content + .alert.info {
     margin-top: 2em; }
-  /* line 96, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 116, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .page .protected-post-form .group,
   .post .protected-post-form .group {
     display: flex;
     margin: 2em auto 0;
     max-width: 16em; }
-  /* line 105, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 125, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .page .protected-post-form .txt input,
   .post .protected-post-form .txt input {
     width: inherit; }
-  /* line 111, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 131, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .page > footer,
   .post > footer {
     margin-top: 2em; }
 
-/* line 116, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 136, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+.sticky {
+  background-color: #F6F6F6;
+  border-radius: var(--control__box--shape); }
+
+/* line 142, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+[dir=ltr] .edit {
+  float: right; }
+
+/* line 146, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+[dir=rtl] .edit {
+  float: left; }
+
+/* line 150, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+.page .edit {
+  margin: 1em 1em 0; }
+
+/* line 156, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+.post .edit {
+  margin: 0; }
+
+/* line 161, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+.post--pagination {
+  margin-top: 2em;
+  text-align: center; }
+  /* line 165, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .post--pagination .post-page-numbers {
+    display: inline-block;
+    margin: .25em;
+    padding: .25em .75em; }
+
+/* line 173, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .category-list {
   border-top: solid 0.0625em var(--color--secondary);
   padding-top: 2em; }
 
-/* line 123, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 180, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .tag-list {
   padding-bottom: 2em; }
 
-/* line 129, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 186, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .category-list > h3,
 .tag-list > h3 {
   font-size: 1.25em;
   margin-bottom: 1em; }
 
-/* line 134, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 191, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .category-list > ul,
 .tag-list > ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-  /* line 139, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 196, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
   .category-list > ul li,
   .tag-list > ul li {
     display: inline-block;
     margin: 0 .75em .75em 0; }
-  /* line 147, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 204, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
   .category-list > ul a,
   .tag-list > ul a {
     border: solid 0.0625em rgba(0, 0, 0, 0.25);
     border-radius: .25em;
     display: inline-block;
     padding: 0 .25em; }
-    /* line 156, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+    /* line 213, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
     .category-list > ul a:focus, .category-list > ul a:hover,
     .tag-list > ul a:focus,
     .tag-list > ul a:hover {
       border-color: rgba(0, 0, 0, 0.5); }
 
-/* line 164, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-#comments {
-  border-top: solid 0.0625em var(--color--secondary);
-  padding-top: 2em; }
-  /* line 170, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-  #comments > h3 {
-    margin-bottom: 0; }
+/* line 224, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+#comments > h3,
+#pingbacks > h3,
+#trackbacks > h3 {
+  margin-bottom: 0; }
 
-/* line 175, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-.comment-list {
-  counter-reset: wp-puxl-blog-classic--counter;
+/* line 229, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+.comment-list,
+.pingback-list,
+.trackback-list {
+  counter-reset: omnibus-prime--counter;
   list-style: none;
   margin: 0;
   position: relative; }
-  /* line 181, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-  [dir=ltr] .comment-list {
+  /* line 237, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  [dir=ltr] .comment-list, [dir=ltr]
+  .pingback-list, [dir=ltr]
+  .trackback-list {
     padding-left: 0; }
-  /* line 185, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-  [dir=rtl] .comment-list {
+  /* line 241, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  [dir=rtl] .comment-list, [dir=rtl]
+  .pingback-list, [dir=rtl]
+  .trackback-list {
     padding-right: 0; }
-  /* line 189, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-  .comment-list li.comment {
+  /* line 245, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .comment-list li.comment,
+  .pingback-list li.comment,
+  .trackback-list li.comment {
     border-top: solid 0.0625em var(--color--secondary);
     padding-top: 2em; }
-    /* line 195, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-    [dir=ltr] .comment-list li.comment {
+    /* line 251, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    [dir=ltr] .comment-list li.comment, [dir=ltr]
+    .pingback-list li.comment, [dir=ltr]
+    .trackback-list li.comment {
       padding-left: 2.5em; }
-    /* line 199, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-    [dir=rtl] .comment-list li.comment {
+    /* line 255, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    [dir=rtl] .comment-list li.comment, [dir=rtl]
+    .pingback-list li.comment, [dir=rtl]
+    .trackback-list li.comment {
       padding-right: 2.5em; }
-    /* line 204, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-    .comment-list li.comment .author > a {
+    /* line 260, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    .comment-list li.comment .author > a,
+    .pingback-list li.comment .author > a,
+    .trackback-list li.comment .author > a {
       font-style: normal; }
-    /* line 209, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-    .comment-list li.comment .comment-content {
+    /* line 265, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    .comment-list li.comment .comment-content,
+    .pingback-list li.comment .comment-content,
+    .trackback-list li.comment .comment-content {
       margin-top: 1em; }
-    /* line 213, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-    .comment-list li.comment .comment-reply {
+    /* line 269, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    .comment-list li.comment .comment-reply,
+    .pingback-list li.comment .comment-reply,
+    .trackback-list li.comment .comment-reply {
       margin: 1em 0 2em; }
-  /* line 220, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-  .comment-list > li.comment:first-child {
+  /* line 276, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .comment-list > li.comment:first-child,
+  .pingback-list > li.comment:first-child,
+  .trackback-list > li.comment:first-child {
     border-top: 0; }
-  /* line 224, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-  .comment-list .children {
+  /* line 280, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .comment-list .children,
+  .pingback-list .children,
+  .trackback-list .children {
     border: 0.0625em var(--color--secondary);
     list-style: none; }
-    /* line 229, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-    [dir=ltr] .comment-list .children {
+    /* line 285, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    [dir=ltr] .comment-list .children, [dir=ltr]
+    .pingback-list .children, [dir=ltr]
+    .trackback-list .children {
       border-left-style: solid;
       margin-left: -2em;
       padding-left: 0; }
-    /* line 235, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-    [dir=rtl] .comment-list .children {
+    /* line 291, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+    [dir=rtl] .comment-list .children, [dir=rtl]
+    .pingback-list .children, [dir=rtl]
+    .trackback-list .children {
       border-right-style: solid;
       margin-right: -2em;
       padding-right: 0; }
     @media (min-width: 768px) {
-      /* line 242, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-      [dir=ltr] .comment-list .children {
-        margin-left: -1em; }
-      /* line 246, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-      [dir=rtl] .comment-list .children {
-        margin-right: -1em; } }
-  /* line 255, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-  .comment-list > li:before,
-  .comment-list .children > li:before {
-    color: #585858;
-    content: counter(wp-puxl-blog-classic--counter);
-    counter-increment: wp-puxl-blog-classic--counter;
-    font-size: 1.5em;
-    font-weight: bold;
-    position: absolute;
-    width: 1em; }
-    /* line 264, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-    [dir=ltr] .comment-list > li:before, [dir=ltr]
-    .comment-list .children > li:before {
-      margin: .125em 0 0 -1.25em;
-      text-align: right; }
-    /* line 272, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-    [dir=rtl] .comment-list > li:before, [dir=rtl]
-    .comment-list .children > li:before {
-      margin: .125em -1.25em 0 0;
-      text-align: left; }
+      /* line 298, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+      [dir=ltr] .comment-list .children, [dir=ltr]
+      .pingback-list .children, [dir=ltr]
+      .trackback-list .children {
+        margin-left: -1.5em; }
+      /* line 302, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+      [dir=rtl] .comment-list .children, [dir=rtl]
+      .pingback-list .children, [dir=rtl]
+      .trackback-list .children {
+        margin-right: -1.5em; } }
 
-/* line 283, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 343, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+.pingback-list li.comment .comment-author,
+.trackback-list li.comment .comment-author {
+  font-size: 1em;
+  line-height: 1.125em; }
+
+/* line 348, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+.pingback-list li.comment time,
+.trackback-list li.comment time {
+  font-size: .875em;
+  line-height: 1.25em; }
+
+/* line 356, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 #respond {
   border-top: solid 0.0625em var(--color--secondary);
   padding: 2em 0; }
 
-/* line 291, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 364, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+.comments--pagination {
+  margin-bottom: 1em;
+  text-align: center; }
+  /* line 368, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .comments--pagination .page-numbers {
+    display: inline-block;
+    margin: .25em;
+    padding: .25em .75em; }
+
+/* line 376, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .pagination {
   border-top: solid 0.0625em var(--color--secondary);
-  padding: 2em 0; }
-  /* line 298, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  padding: 2em 0 1em; }
+  /* line 384, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
   .pagination > ul {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     list-style: none;
     padding: 0; }
-    /* line 304, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+    @media (min-width: 576px) {
+      /* line 384, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+      .pagination > ul {
+        flex-direction: row; } }
+    /* line 395, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
     .pagination > ul > li {
-      flex-grow: 1;
-      max-width: calc(50% - .5em); }
-      /* line 308, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+      width: 100%; }
+      @media (min-width: 576px) {
+        /* line 395, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+        .pagination > ul > li {
+          flex-grow: 1;
+          max-width: calc(50% - .5em); } }
+      /* line 404, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+      [dir=ltr] .pagination > ul > li:nth-child(1) {
+        text-align: left; }
+      /* line 408, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+      [dir=rtl] .pagination > ul > li:nth-child(1) {
+        text-align: right; }
+      @media (min-width: 576px) {
+        /* line 413, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+        [dir=ltr] .pagination > ul > li:nth-child(1) {
+          margin-right: .5em; }
+        /* line 417, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+        [dir=rtl] .pagination > ul > li:nth-child(1) {
+          margin-left: .5em; } }
+      /* line 423, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+      .pagination > ul > li:nth-child(2) {
+        margin-top: 1em; }
+        /* line 424, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+        [dir=ltr] .pagination > ul > li:nth-child(2) {
+          text-align: right; }
+        /* line 428, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+        [dir=rtl] .pagination > ul > li:nth-child(2) {
+          text-align: left; }
+        @media (min-width: 576px) {
+          /* line 435, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+          [dir=ltr] .pagination > ul > li:nth-child(2) {
+            margin-left: .5em;
+            margin-top: 0; }
+          /* line 440, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+          [dir=rtl] .pagination > ul > li:nth-child(2) {
+            margin-right: .5em;
+            margin-top: 0; } }
+      /* line 447, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
       .pagination > ul > li div {
         font-size: .875em;
         line-height: 1.25em;
         margin-top: .5em;
         word-wrap: break-word; }
-      /* line 316, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-      [dir=ltr] .pagination > ul > li:nth-child(1) {
-        margin-right: .5em;
-        text-align: left; }
-      /* line 321, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-      [dir=rtl] .pagination > ul > li:nth-child(1) {
-        margin-left: .5em;
-        text-align: right; }
-      /* line 328, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-      [dir=ltr] .pagination > ul > li:nth-child(2) {
-        margin-left: .5em;
-        text-align: right; }
-      /* line 333, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
-      [dir=rtl] .pagination > ul > li:nth-child(2) {
-        margin-right: .5em;
-        text-align: left; }
 
-/* line 343, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 457, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+#reactions {
+  border-top: solid 0.0625em var(--color--secondary);
+  margin-top: 1em;
+  padding-top: 1em; }
+
+/* line 466, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 #widgets-1 section {
   border-bottom: solid 0.0625em var(--color--secondary);
   margin-bottom: 1.5em;
   padding-bottom: 1.5em; }
-  /* line 350, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 473, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
   #widgets-1 section:last-child {
     border-bottom: 0;
     margin-bottom: 0; }
 
-/* line 357, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 480, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 #main__footer {
   border-top: solid 0.0625em var(--color--secondary);
   padding: 2em 1.5em;
   text-align: center; }
 
-/* line 366, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 489, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 #widgets-2 {
   background-color: #F9F9F9;
   padding: 1em 0; }
 
-/* line 372, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 495, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 #colophon {
   font-size: .875em; }
-  /* line 375, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 498, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
   #colophon nav {
     margin-bottom: 1em; }
-  /* line 379, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 502, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
   #colophon p {
     margin: 0 auto; }
 
-/* WordPress little fixes for PUXL */
-/* line 387, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 508, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .wp-post-image {
   margin: 0 auto 1em; }
 
-/* line 393, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 514, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .aligncenter {
   margin: 0 auto 1em; }
 
-/* line 399, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 520, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .alignleft {
   margin-bottom: 1em;
   max-width: 50%; }
-  /* line 403, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 524, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
   [dir=ltr] .alignleft {
     float: left;
     margin-right: 1em; }
-  /* line 408, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 529, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
   [dir=rtl] .alignleft {
     float: right;
     margin-left: 1em; }
 
-/* line 414, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 535, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .alignright {
   margin-bottom: 1em;
   max-width: 50%; }
-  /* line 418, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 539, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
   [dir=ltr] .alignright {
     float: right;
     margin-left: 1em; }
-  /* line 423, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+  /* line 544, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
   [dir=rtl] .alignright {
     float: left;
     margin-right: 1em; }
 
-/* line 429, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 550, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .alignnone {
   margin-bottom: 1em; }
 
-/* line 433, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 554, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .wp-caption {
   max-width: 100%; }
 
-/* line 438, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 559, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .widget .searchbox {
   width: 100%; }
 
-/* line 442, /Users/MrKanuel/Documents/- PROYECTOS/Puxl/wordpress/blog/wp-content/themes/wp-puxl-blog-classic/style.scss */
+/* line 563, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
 .widget .calendar_wrap > table {
   text-align: center;
   width: 100%; }
+
+/* line 570, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+.error404--options {
+  text-align: center; }
+  /* line 573, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+  .error404--options .btn-icn-txt {
+    margin: .25em; }
+
+/* line 580, /Users/MrKanuel/Desktop/WordPress-theme-Omnibus-Prime/style.scss */
+.search .alert + .btn {
+  display: block;
+  margin: 2em auto;
+  width: 10em; }
 
 /*# sourceMappingURL=style.css.map */

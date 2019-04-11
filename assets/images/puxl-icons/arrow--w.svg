@@ -1,0 +1,11 @@
+<svg id="arrow--w" aria-labelledby="t-arrow--w d-arrow--w" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright (c) 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+  <title id="t-arrow--w">Arrow west</title>
+  <desc id="d-arrow--w">Simple caret arrow pointing leftwards</desc>
+  <path d="M7.586,14.586l14-14c0.779-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.048,0,2.828L11.828,16l12.586,12.586c0.781,0.781,0.781,2.047,0,2.828s-2.047,0.781-2.828,0l-14-14C6.805,16.633,6.805,15.367,7.586,14.586z"/>
+</svg>

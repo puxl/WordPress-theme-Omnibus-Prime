@@ -1,43 +1,55 @@
 <?php
 /*
- * WordPress PUXL Blog classic footer: footer.php
+ * Omnibus Prime footer: footer.php
  *
- * @package WordPress PUXL Blog classic
+ * @package Omnibus Prime
  * @since 1.0
  * @version 1.0
  */
 ?>
 
-  <footer id="main__footer" aria-label="<?php __( 'Main footer', 'wp-puxl-blog-classic' ); ?>" role="contentinfo">
+  <footer id="main__footer" aria-label="<?php __( 'Main footer', 'omnibus-prime' ); ?>" role="contentinfo">
 
     <?php if ( function_exists( 'dynamic_sidebar' ) && is_active_sidebar( 'widgets-2' ) ) { ?>
-    <div id="widgets-2">
-      <div class="grid" aria-label="<?php _e( 'Footer widgets area', 'wp-puxl-blog-classic' ); ?>" role="complementary">
 
-        <?php dynamic_sidebar( 'widgets-2' ); ?>
+      <div id="widgets-2">
 
-        
+        <div class="grid" aria-label="<?php _e( 'Footer widgets area', 'omnibus-prime' ); ?>" role="complementary">
+
+          <?php dynamic_sidebar( 'widgets-2' ); ?>
+
+        </div>
 
       </div>
-    </div>
+
     <?php } ?>
 
     <div id="colophon" class="grid">
 
       <?php if ( has_nav_menu( 'social' ) ) { ?>
-      <nav class="col-xs-12" role="navigation">
-        <?php wp_nav_menu( array(
-          'theme_location'  => 'social',
-          'menu_class'      => 'unlisted h',
-          'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>'
-        ) ); ?>
-      </nav>
+
+        <nav class="col-xs-12" role="navigation">
+          <?php wp_nav_menu( array(
+            'theme_location' => 'social',
+            'menu_class'     => 'unlisted h',
+            'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>'
+          ) ); ?>
+        </nav>
+
       <?php } ?>
 
-      <div id="ik_signature" class="col-xs-12 text--center">
-        <?php _e( 'WP PUXL Blog Classic theme', 'wp-puxl-blog-classic' ); ?>
+      <div class="col-xs-12 text--center">
+
+        <?php
+          $my_theme = wp_get_theme();
+          echo
+            $my_theme->get( 'Name' );
+        ?>
+
         <br>
-        <?php _e( 'made with', 'wp-puxl-blog-classic' ); ?> <span id="ik_love" style="display:inline-block;background-image:url(<?php echo get_template_directory_uri(); ?>/assets/images/ik_project__heart--512.svg);background-position:center;background-repeat:no-repeat;"><span style="opacity:0;overflow:hidden;"><?php _e( 'love', 'wp-puxl-blog-classic' ); ?></span></span> <?php _e( 'by', 'wp-puxl-blog-classic' ); ?> <a href="https://puxl.io/">PUXL</a> <?php _e( 'for', 'wp-puxl-blog-classic' ); ?> <a href="https://wordpress.org/">WordPress</a>
+
+        <?php _e( 'Made with love by', 'omnibus-prime' ); ?> <a href="https://puxl.io/">PUXL</a> <?php _e( 'for', 'omnibus-prime' ); ?> <a href="https://wordpress.org/">WordPress</a>.
+
       </div>
 
     </div>

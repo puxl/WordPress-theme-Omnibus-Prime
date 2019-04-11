@@ -1,0 +1,15 @@
+<svg id="email--draft" aria-labelledby="t-email--draft d-email--draft" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright (c) 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+	<title  id="t-email--draft">Draft email</title>
+	<desc  id="d-email--draft">An open envelope revealing an empty paper sheet</desc>
+	<circle cx="29.5" cy="12.5" r="0.5"/>
+	<circle cx="27.5" cy="12.5" r="0.5"/>
+	<circle cx="4.5" cy="12.5" r="0.5"/>
+	<circle cx="2.5" cy="12.5" r="0.5"/>
+	<path d="M31.605,11.642L27,8.126V5c0-0.552-0.447-1-1-1h-4.406l-4.971-3.794c-0.344-0.275-0.904-0.275-1.248,0L10.405,4H6C5.448,4,5,4.448,5,5v3.126l-4.606,3.516C0.149,11.829,0.003,12.118,0,12.426V31c0,0.553,0.448,1,1,1h30c0.553,0,1-0.447,1-1V12.426C31.996,12.118,31.852,11.829,31.605,11.642z M16,1l3.936,3h-7.87L16,1z M16,24.438l-10-8V5h20v11.438L16,24.438z M5,9.388v6.25l-4-3.2L5,9.388z M31,31H1V13.718L15.375,25.23c0.344,0.271,0.904,0.271,1.248,0L31,13.719V31zM27,15.638v-6.25l4,3.05L27,15.638z"/>
+</svg>

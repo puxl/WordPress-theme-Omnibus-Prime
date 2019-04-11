@@ -1,26 +1,42 @@
-@charset 'UTF-8';
 /*
-Theme Name: WordPress PUXL: Blog classic
-Theme URI: [ http://wordpress.org/themes/twentythirteen ]
+Theme Name: Omnibus Prime
+Theme URI: https://www.kanuel.com/pruebas/wordpress/
 Author: Iñigo Garcia (@MrKanuel)
 Author URI: https://kanuel.com/
-Description: A classic blog theme made using PUXL framework tailor-fitted. Have your contents and stories accessible, WCAG 2.1 AA compliant with zero effort: responsive, color-contrasted, usable, customizable and eco-friendly.
-Version: 1.0-RC
+Description: A classic blog starter theme made using PUXL framework tailor-fitted for WordPress. Have your stories accessible, WCAG 2.1 AA compliant with zero effort: color-contrasted, responsive, customizable, human and eco-friendly.
+Version: 1.0-beta
 License: The MIT license
-License URI: [ http://www.gnu.org/licenses/gpl-2.0.html ]
-Tags: blog, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, microformats, [ post-formats ], rtl-language-support, sticky-post, translation-ready, responsive, HTML5, CSS3, semantic, accessible, WCAG 2.1 A, WCAG 2.1 AA
-Text Domain: wp-puxl-blog-classic
+License URI: https://github.com/puxl/WordPress-theme-Omnibus-Prime/blob/master/LICENSE
+Tags: HTML5, CSS3, semantic, rtl-language-support, accessible, WCAG 2.1 AA, WCAG contrast, responsive, microformats, microformats2, blog, two-columns, right-sidebar, custom-menu, featured-images, align-wide, custom-logo, post-formats, post-thumbnails, sticky-post, translation-ready
+Text Domain: omnibus-prime
 
 This theme is free and open-source.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+@charset 'UTF-8';
+
+
+
 body > .grid {
   margin-top:    2em;
+
+  @media (min-width: 768px) { // map-get($breakpoints, md);
+    margin-top:    4em;
+  }
 }
 
-main {}
+main {
+  .page & {
+    margin-bottom:    4em;
 
+    @media (min-width: 768px) {
+      margin-bottom:    6em;
+    }
+  }
+}
+
+  .page,
   .post {
     margin-bottom:    4em;
     padding:          .5em;
@@ -29,18 +45,14 @@ main {}
       margin-bottom:    0;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 768px) { // map-get($breakpoints, md);
       margin-bottom:    6em;
       padding:          1em;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: 992px) { // map-get($breakpoints, lg);
       margin-bottom:    8em;
       padding:          1.5em;
-    }
-
-    &.sticky {
-      background-color:    #F6F6F6;
     }
 
     > header {
@@ -61,22 +73,30 @@ main {}
           }
         }
       }
-    }
 
       .meta {
-        align-content:      flex-start;
-        display:            flex;
-        justify-content:    space-between;
-        margin:             1em
-                            0
-                            2em;
+        margin:    1em
+                   0
+                   2em;
 
         .flag {
           svg {
             fill:    var(--color--primary);
           }
         }
+
+        .reactions--count {
+          [dir=ltr] & {
+            margin-left:    2.5em; // $flag__visual--size + $flag__visual--margin = 2em + .5em
+
+          }
+
+          [dir=rtl] & {
+            margin-right:    2.5em; // $flag__visual--size + $flag__visual--margin = 2em + .5em
+          }
+        }
       }
+    }
 
     .go-to {
       [dir=ltr] & {
@@ -112,6 +132,43 @@ main {}
       margin-top:    2em;
     }
   }
+
+    .sticky {
+      background-color:    #F6F6F6;
+      border-radius:       var(--control__box--shape);
+    }
+
+    .edit {
+      [dir=ltr] & {
+        float:    right;
+      }
+
+      [dir=rtl] & {
+        float:    left;
+      }
+
+      .page & {
+        margin:    1em
+                   1em
+                   0;
+      }
+
+      .post & {
+        margin:    0;
+      }
+    }
+
+    .post--pagination {
+      margin-top:       2em;
+      text-align:       center;
+
+      .post-page-numbers {
+        display:    inline-block;
+        margin:     .25em;
+        padding:    .25em
+                    .75em;
+      }
+    }
 
     .category-list {
       border-top:     solid
@@ -161,19 +218,18 @@ main {}
       }
     }
 
-    #comments {
-      border-top:     solid
-                      .0625em
-                      var(--color--secondary);
-      padding-top:    2em;
-
+    #comments,
+    #pingbacks,
+    #trackbacks {
       > h3 {
         margin-bottom:    0;
       }
     }
 
-      .comment-list {
-        counter-reset:    wp-puxl-blog-classic--counter;
+      .comment-list,
+      .pingback-list,
+      .trackback-list {
+        counter-reset:    omnibus-prime--counter;
         list-style:       none;
         margin:           0;
         position:         relative;
@@ -238,45 +294,62 @@ main {}
             padding-right:         0;
           }
 
-          @media (min-width: 768px) {
+          @media (min-width: 768px) { // map-get($breakpoints, md);
             [dir=ltr] & {
-              margin-left:    -1em;
+              margin-left:    -1.5em;
             }
 
             [dir=rtl] & {
-              margin-right:    -1em;
+              margin-right:    -1.5em;
             }
 
           }
         }
 
-        > li,
-        .children > li {
-          &:before {
-            color:                #585858;
-            content:              counter(wp-puxl-blog-classic--counter);
-            counter-increment:    wp-puxl-blog-classic--counter;
-            font-size:            1.5em;
-            font-weight:          bold;
-            position:             absolute;
-            width:                1em;
+//        > li,
+//        .children > li {
+//          &:before {
+//            color:                #585858;
+//            content:              counter(omnibus-prime--counter);
+//            counter-increment:    omnibus-prime--counter;
+//            font-size:            1.5em;
+//            font-weight:          bold;
+//            position:             absolute;
+//            width:                1em;
+//
+//            [dir=ltr] & {
+//              margin:               .125em
+//                                    0
+//                                    0
+//                                    -1.25em;
+//              text-align:           right;
+//            }
+//
+//            [dir=rtl] & {
+//              margin:               .125em
+//                                    -1.25em
+//                                    0
+//                                    0;
+//              text-align:           left;
+//            }
+//          }
+//        }
+      }
 
-            [dir=ltr] & {
-              margin:               .125em
-                                    0
-                                    0
-                                    -1.25em;
-              text-align:           right;
-            }
+      .pingback-list,
+      .trackback-list {
+        li.comment {
 
-            [dir=rtl] & {
-              margin:               .125em
-                                    -1.25em
-                                    0
-                                    0;
-              text-align:           left;
-            }
+          .comment-author {
+            font-size:      1em;     // $flag__textual__first-line--font-size:       1em;
+            line-height:    1.125em; // $flag__textual__first-line--line-height:     1.125em;
           }
+
+          time {
+            font-size:      .875em; // $flag__textual__second-line--font-size:      .875em;
+            line-height:    1.25em; // $flag__textual__second-line--line-height:    1.25em;
+          }
+
         }
       }
 
@@ -288,22 +361,88 @@ main {}
                         0;
       }
 
+      .comments--pagination {
+        margin-bottom:    1em;
+        text-align:       center;
+
+        .page-numbers {
+          display:    inline-block;
+          margin:     .25em;
+          padding:    .25em
+                      .75em;
+        }
+      }
+
   .pagination {
     border-top:    solid
                    .0625em
                    var(--color--secondary);
     padding:       2em
-                   0;
+                   0
+                   1em;
 
     > ul {
       display:            flex;
+      flex-direction:     column;
       justify-content:    space-between;
       list-style:         none;
       padding:            0;
 
+      @media (min-width: 576px) { // map-get($breakpoints, sm);
+        flex-direction:    row;
+      }
+
       > li {
-        flex-grow:       1;
-        max-width:       calc(50% - .5em);
+        width:    100%;
+
+        @media (min-width: 576px) { // map-get($breakpoints, sm);
+          flex-grow:    1;
+          max-width:    calc(50% - .5em);
+        }
+
+        &:nth-child(1) {
+          [dir=ltr] & {
+            text-align:    left;
+          }
+
+          [dir=rtl] & {
+            text-align:    right;
+          }
+
+          @media (min-width: 576px) { // map-get($breakpoints, sm);
+            [dir=ltr] & {
+              margin-right:    .5em;
+            }
+
+            [dir=rtl] & {
+              margin-left:    .5em;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          [dir=ltr] & {
+            text-align:    right;
+          }
+
+          [dir=rtl] & {
+            text-align:    left;
+          }
+
+          margin-top:    1em;
+
+          @media (min-width: 576px) { // map-get($breakpoints, sm);
+            [dir=ltr] & {
+              margin-left:    .5em;
+              margin-top:     0;
+            }
+
+            [dir=rtl] & {
+              margin-right:    .5em;
+              margin-top:      0;
+            }
+          }
+        }
 
         div {
           font-size:      .875em;
@@ -311,32 +450,16 @@ main {}
           margin-top:     .5em;
           word-wrap:      break-word;
         }
-
-        &:nth-child(1) {
-          [dir=ltr] & {
-            margin-right:    .5em;
-            text-align:      left;
-          }
-
-          [dir=rtl] & {
-            margin-left:    .5em;
-            text-align:     right;
-          }
-        }
-
-        &:nth-child(2) {
-          [dir=ltr] & {
-            margin-left:    .5em;
-            text-align:     right;
-          }
-
-          [dir=rtl] & {
-            margin-right:    .5em;
-            text-align:      left;
-          }
-        }
       }
     }
+  }
+
+  #reactions {
+    border-top:     solid
+                    .0625em
+                    var(--color--secondary);
+    margin-top:     1em;
+    padding-top:    1em;
   }
 
 #widgets-1 {
@@ -381,8 +504,6 @@ main {}
                  auto;
     }
   }
-
-/* WordPress little fixes for PUXL */
 
   .wp-post-image {
     margin:     0
@@ -442,5 +563,24 @@ main {}
     .calendar_wrap > table {
       text-align:    center;
       width:         100%;
+    }
+  }
+
+  .error404 {
+    &--options {
+      text-align:    center;
+
+      .btn-icn-txt {
+        margin:    .25em;
+      }
+    }
+  }
+
+  .search {
+    .alert + .btn {
+      display:    block;
+      margin:     2em
+                  auto;
+      width:      10em;
     }
   }
