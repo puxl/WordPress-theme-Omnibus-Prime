@@ -1,6 +1,6 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-  Puxl
+  PUXL
 
   Version:    1-beta
 
@@ -8,7 +8,7 @@
 
   Route:      puxl-framework/thanks.txt
 
-  License:    Puxl is licensed under the MIT License (MIT)
+  License:    PUXL is licensed under GNU General Public License v3.0
               https://github.com/puxl/puxl-framework/blob/master/LICENSE
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -136,15 +136,15 @@
 
 
 
-  Puxl icons - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  PUXL icons - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  Project:        Puxl Icons
+  Project:        PUXL Icons
 
   Project URL:    https://puxl.io/puxl-icons/
 
   Author:         Iñigo Garcia (@MrKanuel)
 
-  Copyright:      Copyright © 2018 Puxl
+  Copyright:      Copyright © 2018 PUXL
 
   License:        The MIT License (MIT)
                   https://github.com/puxl/puxl-icons/blob/master/LICENSE
@@ -205,6 +205,7 @@
   http://www.creativebloq.com/web-design/create-flexible-grids-using-sass-9134524
   https://creativecommons.org/
   http://www.cssscript.com/creating-accessible-switch-controls-with-pure-css-scss/
+  https://csstree.github.io/docs/
   https://css-tricks.com/accessible-svgs/
   https://css-tricks.com/almanac/properties/d/direction/
   https://css-tricks.com/css-custom-properties-theming/
@@ -318,6 +319,7 @@
 
   Xavier Crespo,
   Jean Zozaya,
+  Luis Doviso,
   Julen Lizaso,
   Urko Larrañaga,
   Ceinpro,
@@ -331,4 +333,4 @@
   a Mati,
   y a la peña #Estróper de La Sozi!".
 
-  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country.
+  Created by @MrKanuel, brought by The PUXL Clan with love from Basque Country.

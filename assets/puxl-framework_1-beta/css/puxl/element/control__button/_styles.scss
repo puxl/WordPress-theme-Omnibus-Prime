@@ -2,7 +2,7 @@
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //
-//    Puxl
+//    PUXL framework
 //
 //    Version:     1-beta
 //
@@ -14,7 +14,7 @@
 //                 puxl-framework/css/puxl/mixin/_error-warning.scss
 //                 puxl-framework/css/puxl/element/control__button-appearance/_placeholders.scss
 //
-//    License:     The MIT License (MIT)
+//    License:     GNU General Public License v3.0
 //                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -29,9 +29,9 @@
 	}// button[class*=btn]:not([type=button]):not([type=reset]):not([type=submit])
 
 	a[class*=btn] {
-    &:not([role=button]) {
-      @include error-warning('This <a class="btn"> tag must have a role="button" attribute. Example: <a class="btn" role="button">.');
-    }
+//    &:not([role=button]) {
+//      @include error-warning('This <a class="btn"> tag must have a role="button" attribute. Example: <a class="btn" role="button">.');
+//    }
 
     text-align:         center;
     text-decoration:    none;
