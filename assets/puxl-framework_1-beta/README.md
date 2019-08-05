@@ -486,9 +486,9 @@ We would like to thank a lot of people, organizations and initiatives, big and s
 
   Author:         Iñigo Garcia (@MrKanuel)
 
-  Copyright:      Copyright © 2018 PUXL
+  Copyright:      Copyright © 2019 PUXL
 
-  License:        The MIT License (MIT)
+  License:        GPL V3
                   https://github.com/puxl/puxl-icons/blob/master/LICENSE
 
 
@@ -500,4 +500,4 @@ PUXL is created by [@MrKanuel](https://github.com/mrkanuel), and brought by [The
 
 ## Copyright and license
 
-Code released under [the MIT License](https://github.com/puxl/puxl-framework/blob/master/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by-sa/4.0/).
+Code released under [GPL V3](https://github.com/puxl/puxl-framework/blob/master/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by-sa/4.0/).
