@@ -10,7 +10,7 @@
 //
 //    Requires:    puxl-framework/css/puxl/compound/_drawer.scss
 //
-//    License:     The MIT License (MIT)
+//    License:     The GPL V3
 //                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
